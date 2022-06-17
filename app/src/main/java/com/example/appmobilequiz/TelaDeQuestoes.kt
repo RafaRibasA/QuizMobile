@@ -19,6 +19,8 @@ class TelaDeQuestoes : AppCompatActivity() {
         val fragmentoQuestao1 = Questao1()
         val fragmentoQuestao2 = Questao2()
         val fragmentoQuestao3 = Questao3()
+        val fragmentoQuestao4 = Questao4()
+        val fragmentoQuestao5 = Questao5()
 
         supportFragmentManager.beginTransaction().replace(R.id.fragmentoQuestoes, fragmentoQuestao1).commit()
 
@@ -36,7 +38,17 @@ class TelaDeQuestoes : AppCompatActivity() {
             }
 
             if(questaoAtual == 3){
+                supportFragmentManager.beginTransaction().replace(R.id.fragmentoQuestoes, fragmentoQuestao4).commit()
                 resposta = fragmentoQuestao3.verificarAlternativa()
+            }
+
+            if(questaoAtual == 4){
+                supportFragmentManager.beginTransaction().replace(R.id.fragmentoQuestoes, fragmentoQuestao5).commit()
+                resposta = fragmentoQuestao4.verificarAlternativa()
+            }
+
+            if(questaoAtual == 5){
+                resposta = fragmentoQuestao5.verificarAlternativa()
             }
 
             //alert("Teste", "A resposta está " + resposta, this)
@@ -45,7 +57,7 @@ class TelaDeQuestoes : AppCompatActivity() {
                 score = score + 100
             }
 
-            if(questaoAtual == 3){
+            if(questaoAtual == 5){
                 val i = Intent(this, TelaDePontuacao::class.java)
                 i.putExtra("score", score)
                 startActivity(i)
@@ -64,12 +76,21 @@ class TelaDeQuestoes : AppCompatActivity() {
             }
 
             if(questaoAtual == 3){
+                supportFragmentManager.beginTransaction().replace(R.id.fragmentoQuestoes, fragmentoQuestao4).commit()
+            }
+
+            if(questaoAtual == 4){
+                supportFragmentManager.beginTransaction().replace(R.id.fragmentoQuestoes, fragmentoQuestao5).commit()
+            }
+
+            if(questaoAtual == 5){
                 val i = Intent(this, TelaDePontuacao::class.java)
                 i.putExtra("score", score)
                 startActivity(i)
             }
 
             binding.btnPular.isEnabled = false
+            score = score + 100
             questaoAtual++
         }
 
@@ -86,12 +107,44 @@ class TelaDeQuestoes : AppCompatActivity() {
                 fragmentoQuestao3.eliminarAlternativa()
             }
 
+            if(questaoAtual == 4){
+                fragmentoQuestao4.eliminarAlternativa()
+            }
+
+            if(questaoAtual == 5){
+                fragmentoQuestao5.eliminarAlternativa()
+            }
+
             binding.btnEliminar.isEnabled = false
 
         }
 
         binding.btnDesistir.setOnClickListener{
             alertDesistir("DESISTIR", "CERTEZA QUE QUER DESISTIR?", score)
+        }
+
+        binding.btnDica.setOnClickListener{
+            if(questaoAtual == 1) {
+                alert("Dica Questão 1", "Foi um filme solo de um dos principais heróis dos vingadores originais",this)
+            }
+
+            if(questaoAtual == 2) {
+                alert("Dica Questão 2", "Foi um filme que se passa depois do grande clímax da 3º fase",this)
+            }
+
+            if(questaoAtual == 3){
+                alert("Dica Questão 3", "O tesseract era capaz de fornecer acesso instantaneo para qualquer lugar do universo",this)
+            }
+
+            if(questaoAtual == 4){
+                alert("Dica Questão 4", "Ele foi um cientista brilhante no Universo Cinematográfico da Marvel",this)
+            }
+
+            if(questaoAtual == 5){
+                alert("Dica Questão 5", " É o material do qual o escudo do capitão américa foi feito",this)
+            }
+            binding.btnDica.isEnabled = false
+
         }
 
     }
