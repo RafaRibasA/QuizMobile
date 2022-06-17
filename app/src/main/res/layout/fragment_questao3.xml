@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questao3" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Questão 3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Qual joia do infinito estava no Teseract, objeto pelo qual os Vingadores lutaram com o Loki para recuperar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RadioGroup
+        android:id="@+id/rgAlternativas3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/rbAlternativa31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joia da alma" />
+
+        <RadioButton
+            android:id="@+id/rbAlternativa32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Joia da realidade" />
+
+        <RadioButton
+            android:id="@+id/rbAlternativa33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joia do poder" />
+
+        <RadioButton
+            android:id="@+id/rbAlternativa34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joia do espaço" />
+
+        <RadioButton
+            android:id="@+id/rbAlternativa35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButtonJoia da Mente" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
