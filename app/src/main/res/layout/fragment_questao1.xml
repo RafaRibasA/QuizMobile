@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Questao1" >
+    android:background="#eb1d27"
+    tools:context=".Questao1">
 
     <TextView
         android:id="@+id/textView5"
@@ -13,8 +14,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:text="Questão 01"
-        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -35,7 +38,13 @@
             android:id="@+id/rbAlternativa11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
             android:text="Homem de ferro"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="111dp" />
 
@@ -43,7 +52,13 @@
             android:id="@+id/rbAlternativa12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
             android:text="Capitão américa: o primeiro vingador"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="159dp" />
 
@@ -51,7 +66,13 @@
             android:id="@+id/rbAlternativa13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
             android:text="Os Vingadores"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="207dp" />
 
@@ -59,7 +80,13 @@
             android:id="@+id/rbAlternativa14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
             android:text="Homem-aranha(2002)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="255dp" />
 
@@ -67,7 +94,13 @@
             android:id="@+id/rbAlternativa15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
             android:text="Thor"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="303dp" />
     </RadioGroup>
@@ -79,8 +112,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:gravity="center"
         android:text="Que filme começou o universo cinematográfico da Marvel?"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

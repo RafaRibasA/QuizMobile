@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Questao3" >
+    android:background="#eb1d27"
+    tools:context=".Questao3">
 
     <TextView
         android:id="@+id/textView2"
@@ -13,8 +14,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:text="Questão 3"
-        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -28,8 +31,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:gravity="center"
         android:text="Qual joia do infinito estava no Teseract, objeto pelo qual os Vingadores lutaram com o Loki para recuperar"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,30 +56,55 @@
             android:id="@+id/rbAlternativa31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Joia da alma" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Joia da alma"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Joia da realidade" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text=" Joia da realidade"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Joia do poder" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Joia do poder"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa34"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Joia do espaço" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Joia do espaço"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa35"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButtonJoia da Mente" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:text="RadioButtonJoia da Mente"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:paddingLeft="10dp" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

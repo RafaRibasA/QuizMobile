@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eb1d27"
     tools:context=".Sobre">
 
     <Button
@@ -13,23 +14,29 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Voltar pro menu"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:strokeColor="#FBFAFA"
+        app:strokeWidth="5px" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="32dp"
-        android:fontFamily="@font/bebas_neue"
+        android:fontFamily="@font/bebas"
         android:gravity="center"
         android:text="Este quiz tem como tema o universo cinematográfico da Marvel, que é abordado através de 5 questões. Há três formas de facilitar uma questão, sendo que cada uma dessas formas só pode ser usada 1 vez. A primeira forma é a dica, onde é descrito uma dica para ajudar na questão. A segunda forma de ajuda é a opção eliminar, onde são eliminadas 2 alternativas incorretas para a pergunta. A terceira e última opção de ajuda é a opção de pular, que pula a questão e garante a pontuação para o jogador, como se ele tivesse acertado a questão. Cada acerto da 100 pontos."
-        android:textSize="24sp"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eb1d27"
     tools:context=".TelaDePontuacao">
 
     <TextView
@@ -13,7 +14,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="66dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:text="O SEU SCORE É:"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +29,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:text="100"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,13 +43,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="#911F1F"
         android:ems="10"
+        android:fontFamily="@font/bebas"
         android:hint="Digite seu nome"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPontuacao" />
 
@@ -53,11 +65,16 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Salvar score"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edNoneScore" />
+        app:layout_constraintTop_toBottomOf="@+id/edNoneScore"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="5px" />
 
     <Button
         android:id="@+id/btnVoltarMenu"
@@ -66,9 +83,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Voltar para o menu"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSalvarScore" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSalvarScore"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="5px" />
 </androidx.constraintlayout.widget.ConstraintLayout>

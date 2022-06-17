@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eb1d27"
     tools:context=".TelaDeQuestoes">
 
     <androidx.fragment.app.FragmentContainerView
@@ -14,6 +15,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:background="#eb1d27"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,10 +28,15 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Dica"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/btnPular"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentoQuestoes" />
+        app:layout_constraintTop_toBottomOf="@+id/fragmentoQuestoes"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="5px" />
 
     <Button
         android:id="@+id/btnPular"
@@ -38,10 +45,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Pular"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/btnEliminar"
         app:layout_constraintStart_toEndOf="@+id/btnDica"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentoQuestoes" />
+        app:layout_constraintTop_toBottomOf="@+id/fragmentoQuestoes"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="5px" />
 
     <Button
         android:id="@+id/btnEliminar"
@@ -50,10 +62,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Eliminar"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnPular"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentoQuestoes" />
+        app:layout_constraintTop_toBottomOf="@+id/fragmentoQuestoes"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="5px" />
 
     <Button
         android:id="@+id/btnDesistir"
@@ -61,10 +78,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Desistir"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/btnProximo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPular" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPular"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="5px" />
 
     <Button
         android:id="@+id/btnProximo"
@@ -72,8 +94,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#911F1F"
+        android:fontFamily="@font/bebas"
         android:text="Proximo"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnDesistir"
-        app:layout_constraintTop_toBottomOf="@+id/btnPular" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPular"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="5px" />
 </androidx.constraintlayout.widget.ConstraintLayout>

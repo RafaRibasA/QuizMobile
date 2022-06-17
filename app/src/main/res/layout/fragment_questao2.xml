@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Questao2" >
+    android:background="#eb1d27"
+    tools:context=".Questao2">
 
     <TextView
         android:id="@+id/textView9"
@@ -13,8 +14,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:text="Questão 2"
-        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -28,8 +31,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bebas"
         android:gravity="center"
         android:text="Qual filme encerrou a 3º e mais famosa fase até o momento?"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,30 +56,55 @@
             android:id="@+id/rbAlternativa21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vingadores: Ultimato" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Vingadores: Ultimato"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vingadores: Guerra infinita" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Vingadores: Guerra infinita"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa23"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Homem-aranha : Longe de Casa" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Homem-aranha : Longe de Casa"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thor: Ragnarok" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Thor: Ragnarok"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rbAlternativa25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Capitã marvel" />
+            android:layout_marginBottom="5dp"
+            android:background="#911F1F"
+            android:paddingLeft="10dp"
+            android:text="Capitã marvel"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
