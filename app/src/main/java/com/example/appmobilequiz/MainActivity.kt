@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.appmobilequiz.databinding.ActivityMainBinding
+import com.example.appmobilequiz.databinding.ActivitySobreBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding : ActivityMainBinding
@@ -19,6 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnPontuacao.setOnClickListener{
             val i = Intent(this, ListaDePontuacao::class.java)
+            startActivity(i)
+        }
+
+        binding.btnSobre.setOnClickListener{
+            var i = Intent(this, Sobre :: class.java)
             startActivity(i)
         }
     }
